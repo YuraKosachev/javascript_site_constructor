@@ -6,6 +6,10 @@ export function col(content) {
     return `<div class="col-sm">${content}</div>`;
 }
 
+export function colRow(content) {
+    throw Error(`Not implemented for ${content}`);
+}
+
 //преобразование стилей
 export function css(styles = {}) {
     if (typeof styles === 'string')
